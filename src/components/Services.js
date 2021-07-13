@@ -9,7 +9,7 @@ const Services = () => {
       <h1 className='text-lg font-bold text-coffee_2 mb-5'>SERVICES</h1>
       <div className='w-full gridRes'>
         {data.map((item) => {
-          const { img, title, id } = item
+          const { img, titleEn, id } = item
           return (
             <div
               key={id}
@@ -23,7 +23,7 @@ const Services = () => {
                 />
               </div>
               <div className='px-1 my-3 flex items-center justify-between'>
-                <h1 className='text-sm md:text-lg text-coffee_1'>{title}</h1>
+                <h1 className='text-sm md:text-lg text-coffee_1'>{titleEn}</h1>
                 <Link
                   to='/services'
                   className='text-sm md:text-lg text-coffee_1'

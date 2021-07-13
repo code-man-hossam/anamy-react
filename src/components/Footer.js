@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {
   FaRegPaperPlane,
   FaMapMarkedAlt,
   FaEnvelope,
   FaFacebook,
-  FaTwitter,
+  FaLaptopCode,
   FaLinkedinIn,
   FaInstagram,
 } from 'react-icons/fa'
@@ -50,6 +49,7 @@ const Footer = () => {
           <a
             href='https://www.facebook.com/AnamyForMultiactivtiesCoLtd/'
             target='_blank'
+            rel='noreferrer'
             className='w-28 flex items-center text-coffee_1 text-sm mb-3'
           >
             <span className='mr-3'>
@@ -57,27 +57,30 @@ const Footer = () => {
             </span>
             Facebook
           </a>
-          <Link
-            to='/'
+          <a
+            href='https://code-man-hossam.github.io/portfolio/'
+            target='_blank'
+            rel='noreferrer'
             className='w-28 flex items-center text-coffee_1 text-sm mb-3'
           >
             <span className='mr-3'>
-              <FaTwitter />
+              <FaLaptopCode />
             </span>
-            Twitter
-          </Link>
-          <Link
-            to='/'
+            Anamy's Tech
+          </a>
+          <a
+            href='/'
             className='w-28 flex items-center text-coffee_1 text-sm mb-3'
           >
             <span className='mr-3'>
               <FaLinkedinIn />
             </span>
             LinkedIn
-          </Link>
+          </a>
           <a
             href='https://instagram.com/anamygroup?utm_medium=copy_link'
             target='_blank'
+            rel='noreferrer'
             className='w-28 flex items-center text-coffee_1 text-sm mb-3'
           >
             <span className='mr-3'>

@@ -16,6 +16,19 @@ module.exports = {
         body: ['Work Sans'],
         luki: ['Luckiest Guy'],
       },
+      rotate: {
+        cos: '720deg',
+      },
+      translate: {
+        btn1: '-5.2rem',
+        btn2: '-3.2rem',
+        btn3: '-1.2rem',
+        btn4: '0.8rem',
+        letter1: '2.5rem',
+        letter2: '4.5rem',
+        letter3: '6.5rem',
+        letter4: '8.5rem',
+      },
     },
   },
   variants: {

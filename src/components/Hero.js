@@ -45,7 +45,7 @@ const Hero = () => {
         <FiArrowRightCircle />
       </button>
       {data.map((item, itemIndex) => {
-        const { id, img, title, text } = item
+        const { id, img, titleEn, textEn } = item
 
         let position = 'translate-x-full opacity-0'
         if (itemIndex === index) {
@@ -70,10 +70,10 @@ const Hero = () => {
               className='w-full h-full absolute object-cover'
             />
             <div className='max-w-md z-10 px-9'>
-              <h1 className='text-xl font-bold text-coffee_1'>{title}</h1>
+              <h1 className='text-xl font-bold text-coffee_1'>{titleEn}</h1>
               <p className='text-sm text-white tracking-wider'>
-                {text.slice(0, 75) + '... '}
-                <Link href='/services' className='text-blue-700'>
+                {textEn.slice(0, 75) + '... '}
+                <Link to='/services' className='text-blue-700'>
                   read more
                 </Link>
               </p>

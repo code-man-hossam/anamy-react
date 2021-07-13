@@ -26,19 +26,31 @@ const Menu = ({ show, setShow }) => {
       <div className='w-full'>
         <ul className='w-full flex flex-col justify-between text-coffee_2 text-lg font-bold tracking-wide'>
           <li className='list'>
-            <Link to='/' className='flex items-center'>
+            <Link
+              to='/'
+              className='flex items-center'
+              onClick={() => setShow(false)}
+            >
               <GoHome className='mr-1' />
               Home
             </Link>
           </li>
           <li className='list'>
-            <Link to='/about' className='flex items-center'>
+            <Link
+              to='/about'
+              className='flex items-center'
+              onClick={() => setShow(false)}
+            >
               <BsQuestionDiamond className='mr-1' />
               About Us
             </Link>
           </li>
           <li className='list'>
-            <Link to='/services' className='flex items-center'>
+            <Link
+              to='/services'
+              className='flex items-center'
+              onClick={() => setShow(false)}
+            >
               <GiClockwork className='mr-1' />
               Services
             </Link>
@@ -47,6 +59,7 @@ const Menu = ({ show, setShow }) => {
             <a
               href='mailto:anamygroup2@gmail.com'
               className='flex items-center'
+              onClick={() => setShow(false)}
             >
               <FaEnvira className='mr-1' />
               Contact

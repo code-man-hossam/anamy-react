@@ -1,5 +1,5 @@
 import React from 'react'
-import { objectives } from '../components/data'
+import { objectives } from './data'
 
 const AboutGoals = () => {
   return (
